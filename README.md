@@ -8,25 +8,27 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Requires node.js/npm installed
+Requires * [node.js](https://nodejs.org/) - Node.js
 
 ### Installing
 
 Clone repository or download .zip and unzip it
 
-Say what the step will be
+Enter base directory
+
+Install dependencies
 
 ```
-Give the example
+npm install
 ```
 
-And repeat
+Run development server
 
 ```
-until finished
+npm run serve
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Visit your local server on the provided port (normally http://127.0.0.1:5000)
 
 ## Deployment
 
@@ -35,12 +37,12 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [react.js](https://reactjs.org/) - React.js library
+* [babel](https://babeljs.io/) - Babel compiler
+* [webpack](https://webpack.js.org/) - Webpack dependency manager
 
 ## Authors
 
-* **Sérgio Ribeiro** - *Initial work* - [codepressor](https://github.com/codepressor)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Sérgio Ribeiro** - *Creator* - [codepressor](https://codepressor.com/)
 
 ## License
 
