@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "React Contact List",
   "main": "index.js",
+  "repository": "https://github.com/codepressor/react-contact-list",
   "scripts": {
-    "watch" : "webpack -d --watch",
-    "build" : "webpack",
+    "watch": "webpack -d --watch",
+    "build": "webpack",
     "start": "react-scripts start",
-    "serve" : "serve ./public"
+    "serve": "serve ./public"
   },
   "keywords": [
     "react",
@@ -26,6 +27,6 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router-dom": "^3.10.10"
+    "react-router-dom": "^4.2.2"
   }
 }

@@ -1,6 +1,6 @@
 # React Contact List
 
-Simple contact list made with react.js
+Simple contact list made with React.js and CSS Grid Layout
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ Requires node.js/npm installed
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+Clone repository or download .zip and unzip it
 
 Say what the step will be
 
