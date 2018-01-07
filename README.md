@@ -8,17 +8,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Requires * [node.js](https://nodejs.org/) - Node.js
+Requires [Node.js](https://nodejs.org/)
 
 ### Installing
 
-Clone repository or download .zip and unzip it
-
-Enter base directory
-
-Install dependencies
+Clone repository or download .zip and unzip it. Install dependencies
 
 ```
+cd react-contact-list-master
 npm install
 ```
 
@@ -28,17 +25,17 @@ Run development server
 npm run serve
 ```
 
-Visit your local server on the provided port (normally http://127.0.0.1:5000)
+Visit your local server on the provided port (ex: http://127.0.0.1:5000)
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+TO DO
 
 ## Built With
 
-* [react.js](https://reactjs.org/) - React.js library
-* [babel](https://babeljs.io/) - Babel compiler
-* [webpack](https://webpack.js.org/) - Webpack dependency manager
+* [React.js](https://reactjs.org/) - Javascript library
+* [Babel](https://babeljs.io/) - Compiler
+* [Webpack](https://webpack.js.org/) - Dependency manager
 
 ## Authors
 
