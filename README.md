@@ -9,17 +9,18 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Requires [Node.js](https://nodejs.org/)
+CSS Grid: not supported on IE (Desktop), not supported on Opera (Mobile)
 
 ### Installing
 
-Clone repository or download .zip and unzip it. Install dependencies
+Clone repository or download .zip and unzip it. Install dependencies:
 
 ```
 cd react-contact-list-master
 npm install
 ```
 
-Run development server
+Run development server:
 
 ```
 npm run serve
@@ -44,10 +45,4 @@ TO DO
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
 
