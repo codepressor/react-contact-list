@@ -9,6 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Requires [Node.js](https://nodejs.org/)
+
 CSS Grid: not supported on IE (Desktop), not supported on Opera (Mobile)
 
 ### Installing
