@@ -9,11 +9,7 @@
     "build": "webpack",
     "serve": "serve ./public"
   },
-  "keywords": [
-    "react",
-    "routing",
-    "example"
-  ],
+  "keywords": [ "react", "routing", "example" ],
   "author": "codepressor",
   "license": "MIT",
   "devDependencies": {

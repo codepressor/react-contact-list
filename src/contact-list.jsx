@@ -1,3 +1,5 @@
+// display contact list
+
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
@@ -43,17 +45,12 @@ class ContactList extends Component {
         const list = contacts.map((contact) => {
             return (
                 <form id={contact.id} onSubmit={this.handleDel} className="input-form" key={contact.id}>
-
                     <Link to={"/contact/"+contact.id} className="list-item list-link">
                         {contact.name}
                     </Link>
-
                     <span className="list-item">{contact.group}</span>
-
                     <span className="list-item">{contact.mobile}</span>
-
                     <button type="submit">-</button>
-
                 </form>
             )
         });
@@ -65,7 +62,8 @@ class ContactList extends Component {
                 <form onSubmit={this.handleAdd} className="input-form">
                     <input type="text" id="name" value={this.state.name} onChange={this.handleChange} placeholder="Name"/>
                     {/* <input type="text" id="group" value={this.state.group} onChange={this.handleChange} placeholder="Group"/> */}
-                    <select id="group" onChange={this.handleChange}>
+                    <select id="group" className="list-select" value={this.state.group} onChange={this.handleChange}>
+                        <option value='' disabled>Select Group</option>
                         {groups.map((group) => 
                             <option key={group.id} name={group.name} value={group.name}>{group.name}</option>
                         )}

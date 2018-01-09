@@ -1,12 +1,7 @@
+// main app
+
 import React, {Component} from 'react';
-
-import {
-    BrowserRouter as Router,
-    Link,
-    Route,
-    Switch,
-} from 'react-router-dom';
-
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import Menu from './menu.jsx';
 import ContactList from './contact-list.jsx';
 import ContactDetail from './contact-detail.jsx';
@@ -56,6 +51,7 @@ class App extends Component {
         this.addContact = this.addContact.bind(this);
         this.delContact = this.delContact.bind(this);
         this.editContact = this.editContact.bind(this);
+
         this.addGroup = this.addGroup.bind(this);
         this.delGroup = this.delGroup.bind(this);
 
@@ -65,13 +61,9 @@ class App extends Component {
 
         const contacts = this.state.contacts;
         const id = Math.max.apply(Math, contacts.map( function(c){return c.id;}) ) + 1;
-        // const max = this.state.contacts.reduce((prev, current) => (prev.id > current.id) ? prev : current);
         contact.id = id;
         contacts.push(contact);
-
-        this.setState({
-            contacts: contacts
-        });       
+        this.setState({ contacts: contacts });       
 
     }
 
@@ -94,10 +86,7 @@ class App extends Component {
         const groups = this.state.groups;
         const id = Math.max.apply(Math, groups.map( function(c){return c.id;}) ) + 1;
         groups.push({id: id, name: group});
-
-        this.setState({
-            groups: groups
-        });       
+        this.setState({ groups: groups });       
 
     }
 
@@ -109,10 +98,9 @@ class App extends Component {
 
     render(){
 
-
         return(
 
-            <Router basename={'/projects/react-contact-list'}>
+            <Router basename={'/'}>
                 <div className="wrapper">
                     <Menu />
                     

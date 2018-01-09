@@ -19,8 +19,6 @@ html, body {
 .menu {
     grid-area: menu;
     background-color: #683ddf;
-    /* align-self: center;
-    justify-self: center; */
 }
 
 .menu-item {
@@ -35,8 +33,6 @@ html, body {
     grid-area: content;
     padding-left: 5rem;
     padding-top: 3rem;
-    /* align-self: center;
-    justify-self: center; */
 }
 
 h1 {
@@ -56,6 +52,10 @@ h1 {
 .list-link {
     text-decoration: none;
     color: #683ddf;
+}
+
+.list-select {
+    color: #676767;
 }
 
 .input-form {
@@ -101,6 +101,12 @@ h1 {
     grid-gap: 0.3rem;
 }
 
+.msg {
+    padding: 0.5rem;
+}
+
+
+
 /* Media queries */
 
 @media screen and (max-width: 768px) {
@@ -121,6 +127,24 @@ h1 {
     .content {
         text-align: center;
         padding-left: 0;
+    }
+
+    .input-form {
+        width: 90vw;
+        grid-template-columns: 29vw 29vw 22.5vw 6vw;
+        margin-left: 2vw;
+    }
+
+    .group-form {
+        width: 90vw;
+        grid-template-columns: 82.5vw 6vw;
+        margin-left: 2vw;
+    }
+    
+    .detail-form {
+        width: 90vw;
+        grid-template-columns: 90vw;
+        margin-left: 2vw;
     }
 
 }

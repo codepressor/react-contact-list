@@ -29,9 +29,11 @@ npm run serve
 
 Visit your local server on the provided port (ex: http://127.0.0.1:5000)
 
-## Deployment
+Watch for code modifications:
 
-TO DO
+```
+npm run watch
+```
 
 ## Built With
 

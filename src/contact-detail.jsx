@@ -1,3 +1,5 @@
+// update contact details
+
 import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
 
@@ -20,9 +22,8 @@ class ContactDetail extends Component {
     }
     
     handleSubmit(event) {
-        // console.log(this.state.id+this.state.name+this.state.group+this.state.mobile);
         this.props.editContact(this.state);
-        this.setState({msg: 'contact saved'});
+        this.setState({msg: 'Contact saved'});
         event.preventDefault();
     }
 
@@ -43,6 +44,7 @@ class ContactDetail extends Component {
                 <form onSubmit={this.handleSubmit} className="detail-form">
                     <input type="text" id="name" value={this.state.name} onChange={this.handleChange} placeholder="Name"/>
                     <select id="group" value={this.state.group} onChange={this.handleChange}>
+                        <option value='' disabled>Select Group</option>
                         {groups.map((group) => 
                             <option key={group.id} name={group.name} value={group.name}>{group.name}</option>
                         )}
@@ -50,7 +52,7 @@ class ContactDetail extends Component {
                     <input type="text" id="mobile" value={this.state.mobile} onChange={this.handleChange} placeholder="Mobile"/>
                     <button type="submit">Save</button>
                 </form>
-                <div>{this.state.msg}</div>
+                <div className="msg">{this.state.msg}</div>
             </div>
         );
 
